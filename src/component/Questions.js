@@ -4,14 +4,11 @@ import { ListGroup, Card, Form, Button, Table } from "react-bootstrap";
 import Result from "./Result"
 let value = 0;
 const Questions = ({ list }) => {
-    const [index, setIndex] = useState(1);
     const [question, setQuestion] = useState(list[0].question);
     const [qid, setId] = useState(list[0].id);
     const [option, setOptions] = useState(list[0].options[0]);
-    const [check, setCheck] = useState(0);
-    const [check2, setCheck2] = useState(0);
+   
     const [flag, setFlag] = useState(0);
-    const [counter, setCounter] = useState(0);
     let Mylist = list;
 
 

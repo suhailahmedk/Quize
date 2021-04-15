@@ -40,7 +40,6 @@ const Questions = ({ list }) => {
             value = value - 1;
             console.log(value)
             setName("Next");
-            setCheck(0);
             setId(list[value].id);
             setQuestion(list[value].question);
             setOptions(list[value].options[0]);
